@@ -11,6 +11,7 @@ using SweetAndTreat.Models;
 
 namespace SweetAndTreat.Controllers
 {
+  [Authorize]
   public class TreatsController : Controller
   {
     private readonly SweetAndTreatContext _db;
@@ -20,6 +21,7 @@ namespace SweetAndTreat.Controllers
       _userManager = userManager;
       _db = db;
     }
+    [AllowAnonymous]
     public ActionResult Index()
     {
       List<Treat> model = _db.Treats.ToList();

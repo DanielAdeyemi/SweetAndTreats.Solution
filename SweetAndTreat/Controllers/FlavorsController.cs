@@ -11,6 +11,7 @@ using SweetAndTreat.Models;
 
 namespace SweetAndTreat.Controllers
 {
+  [Authorize]
   public class FlavorsController : Controller
   {
     private readonly SweetAndTreatContext _db;
@@ -20,13 +21,13 @@ namespace SweetAndTreat.Controllers
       _userManager = userManager;
       _db = db;
     }
+    [AllowAnonymous]
     public ActionResult Index()
     {
       List<Flavor> model = _db.Flavors.ToList();
       return View(model);
     }
 
-    [Authorize]
     public ActionResult Create()
     {
       ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "TreatName");
