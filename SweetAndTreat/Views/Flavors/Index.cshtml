@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@using SweetAndTreat.Models
+@model IEnumerable<SweetAndTreat.Models.Flavor>
+
+<h3>All flavors: </h3>
+
+@if (Model.Any())
+{
+  <ul>
+    @foreach (Flavor flavor in Model)
+    {
+      <li>@Html.ActionLink($"{flavor.FlavorName}", "Details", new { id = flavor.FlavorId})</li>
+    }
+  </ul>
+}
+else
+{
+  <h4>No flavors have been added yet!</h4>
+}
+
+<p>@Html.ActionLink("Add new flavor", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<p>@Html.ActionLink("Log in", "Login", "Account")</p>
