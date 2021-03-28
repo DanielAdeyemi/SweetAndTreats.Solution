@@ -25,5 +25,12 @@ namespace SweetAndTreat.Controllers
       List<Flavor> model = _db.Flavors.ToList();
       return View(model);
     }
+
+    [Authorize]
+    public ActionResult Create()
+    {
+      ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "TreatName");
+      return View();
+    }
   }
 }
