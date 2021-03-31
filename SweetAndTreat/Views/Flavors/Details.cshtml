@@ -23,3 +23,8 @@ else
     }
   </ul>
 }
+
+<button class="btn btn-dark">@Html.ActionLink("Back to the list of flavors", "Index")</button>
+<button class="btn btn-dark">@Html.ActionLink("Edit details for this flavor", "Edit", new { id = Model.FlavorId})</button>
+<button class="btn btn-dark">@Html.ActionLink("Add a treat for this flavor", "AddTreat", new { id = Model.FlavorId})</button>
+<button class="btn btn-danger">@Html.ActionLink("Delete this flavor", "Delete", new { id = Model.FlavorId})</button>

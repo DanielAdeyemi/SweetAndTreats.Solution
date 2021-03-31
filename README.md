@@ -1,7 +1,7 @@
 ## <div align="center">Pierre's Sweet and Savory Treats</div>
 #### <div align="center">📚 *Epicodus Independent Project # 11  (Week 5 of C#)  3/26/2021* </div> 
 ***<p align="right">By Daniel Adeyemi***</p>   
-<p align="center">
+<p align="center"> 
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="30" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="30"/>
@@ -19,7 +19,7 @@ ___
 | | |  |
 </div>
 
-<a name="description"></a>
+<!-- <a name="description"></a>
 ## <div align="center"> 🚩 *Description*:</div>    
 
 ##### ***An MVC app to manage engineers and machines they can repair on factory. User will be able to add(hire) an engineer, add(install) machine and assign machines to engineers and vice versa.***
@@ -112,4 +112,4 @@ This project was used to practice building web applications with SQL database, E
 ## <div align="center"> 📘 *License and copyright:*
 
 > ***© Daniel Adeyemi, 2021***  
-> ⚖️ *[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)*
+> ⚖️ *[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)* -->
