@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@model SweetAndTreat.Models.Treat
+
+<h3>Edit name for this treat: </h3>
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.TreatId)
+  @Html.Label("Change name here: ")
+  @Html.EditorFor(model => model.TreatName)
+  <input type="submit" value="Let's change it!" class="btn btn-primary">
+}
+
+<button class="btn btn-white">@Html.ActionLink("Back to treats", "Index" )</button>
+<button class="btn btn-danger">@Html.ActionLink("Delete this treat", "Delete", new { id = Model.TreatId} )</button>
