@@ -81,6 +81,7 @@ ___
 * C# 9
 * .NET 5.0
 * ASP.NET Core MVC
+* ASP.NET Identity
 * Razor View Egine
 * RESTful Routing, CRUD & HTTP
 * CSHTML and CSS
