@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@model SweetAndTreat.Models.Treat
+
+<h3>Add treat: </h3>
+@using (Html.BeginForm())
+{
+  @Html.Label("Treat name: ")
+  @Html.TextBoxFor(model => model.TreatName, new { @required = "required"})
+  @Html.Label("Attach flavor: ")
+  @Html.DropDownList("FlavorId", (SelectList)ViewBag.MyList, "You can select flavor or add it later", new { @class = "form-control"})
+  <button type="submit" class="btn btn-success">Add new Treat </button>
+}
+
+<button class="btn btn-dark">@Html.ActionLink("Show all treats", "Index")</button>
+<button class="btn btn-dark">@Html.ActionLink("To home page", "Index", "Home")</button>
