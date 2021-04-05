@@ -8,7 +8,7 @@
 <img alt="MySQL" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" /> 
 </p>
 
-<div style="text-align:center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Fbe7SlqSVJDbtu02mXtXZVEhA27SDKQ3cw&usqp=CAU" alt="Bakery image" width="300"/></div>
+<div style="text-align:center"><img src="https://shopsweetsandtreats.com/pub/media/logo/default/logo_1.png" alt="Bakery image" width="300"/></div>
 
 ___
 ## <div align="center"> Table of Contents: 
