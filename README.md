@@ -19,22 +19,22 @@ ___
 | | |  |
 </div>
 
-<!-- <a name="description"></a>
+<a name="description"></a>
 ## <div align="center"> 🚩 *Description*:</div>    
 
-##### ***An MVC app to manage engineers and machines they can repair on factory. User will be able to add(hire) an engineer, add(install) machine and assign machines to engineers and vice versa.***
+##### ***An MVC app to manage treats and flavors at Pierre's bakery. User can view treats and flavors without logging in, but need to log in to have full CRUD functionality.***
 
 <a name="setup"></a>
 ## <div align="center"> 🔧 *Setup/Installation instructions:*
 #### 🌐 From the web:
-* Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Factory.Solution.git).
+* Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/SweetAndTreats.Solution.git).
 * * At the top of the repository, click <img src="https://i.imgur.com/Ej9Dphm.png" alt="Code Button" height="20" align="center" /> then select "Download ZIP".
 
 <img src="https://i.imgur.com/tZKvGne.gif" alt="download zip gif" height="200"/>
 
-* Unzip the file, navigate to the `Factory` directory to check code
+* Unzip the file, navigate to the `SweetAndTreat` directory to check code
 #### ⚙️ From the terminal: 
-* Clone my repository from GitHub using `git clone https://github.com/DanielAdeyemi/Factory.Solution.git` in your terminal or GitBash
+* Clone my repository from GitHub using `git clone https://github.com/DanielAdeyemi/SweetAndTreats.Solution.git` in your terminal or GitBash
 * Navigate to the downloaded folder using ***cd*** command
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
 ⚠️ *Note: To run this project locally you will need to have .NET Core. You can check if you have .NET Core by running `dotnet --version` in the command line. If you do not have .NET Core please find more information and download [here](https://dotnet.microsoft.com/download/dotnet).*
@@ -43,7 +43,7 @@ ___
 ## <div align="center"> 🗃️ SQL setup and connection to the application
 * In your terminal start using mysql by running command: `mysql -u[YOUR-USERNAME] -p[YOUR-PASSWORD]` 
 * run command `SOURCE [PATH-TO-THE-PROJECT]/daniel_adeyemi.sql` to recreate database and tables.
-* inside `Factory` folder create **appsettings.json** file and input following information:    
+* inside `SweetAndTreat` folder create **appsettings.json** file and input following information:    
 ```
 {
   "ConnectionStrings": {
@@ -59,7 +59,7 @@ ___
 - You need to have MySqlWorkbench installed on your machine. You can download it [here](https://www.mysql.com/products/workbench/)   
 - In the navigator > Administration window, select Data Import/Restore   
 - In Import Options select Import from Self-Contained File.   
-- Navigate to daniel_adeyemi.sql in the Factory.Solutions directory   
+- Navigate to daniel_adeyemi.sql in the SweetAndTreat.Solutions directory   
 - Under Default Schema to be Imported To, select the New button.   
 - Enter the name of your database   
 - Click ok   
@@ -67,13 +67,13 @@ ___
 - Reopen the Navigator > Schemas tab and refresh the schemas(using `Refresh All`).    
  *If you already have everything set up and want to use Migrations from this project (**Highly recommended!**), follow steps below*:
 - run `dotnet restore` to restore all necessary packages
-- run `dotnet ef database update` to apply database structure from the migrations (***make sure you are inside Factory directory!***)
+- run `dotnet ef database update` to apply database structure from the migrations (***make sure you are inside SweetAndTreat directory!***)
 </details>
 
 <a name="view"></a>
 
 ### <div align="center">  🖥️ View website:
-*GitHub page is not available for this project. To view functionality you need to run `dotnet run` from **Factory** folder. After that you will see `http://localhost:5000`, click on that link and it will open web appliction in your default browser. In order to exit from local host use **Ctrl+C** command.*
+*GitHub page is not available for this project. To view functionality you need to run `dotnet run` from **SweetAndTreat** folder. After that you will see `http://localhost:5000`, click on that link and it will open web appliction in your default browser. In order to exit from local host use **Ctrl+C** command.*
 
 <a name="technology"></a>
 
@@ -94,14 +94,13 @@ ___
 <a name="bugs"></a>
 
 ## <div align="center"> 🐛 *Known bugs:*
-This project was used to practice building web applications with SQL database, Entity Framework and Many-to-Many Relationships. Application has basic style.
+This project was used to practice building web applications with SQL database, ASP.NET Identity and Many-to-Many Relationships. Application has basic style.
 
 <a name="improvement"></a>
 
 ## <div align="center"> 🌟 *Improvement opportunities:*
 * add more style to the pages
-* don't let assign machine to engineer if it's already in his list. 
-* don't let assign engineer to machine if he already has license to repair it. 
+
 
 <a name="contact"></a>
 
@@ -113,4 +112,4 @@ This project was used to practice building web applications with SQL database, E
 ## <div align="center"> 📘 *License and copyright:*
 
 > ***© Daniel Adeyemi, 2021***  
-> ⚖️ *[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)* -->
+> ⚖️ *[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)*
