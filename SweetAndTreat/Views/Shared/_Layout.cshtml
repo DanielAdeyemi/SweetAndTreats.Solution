@@ -9,6 +9,21 @@
 </head>
 
 <body>
+	<header>
+		@if (User.Identity.IsAuthenticated)
+		{
+			<li class="nav-item">
+			<button class="btn btn-white">@Html.ActionLink("Logout", "Logout", "Account")</button>
+			</li>
+		}
+		else
+		{
+			<li class="nav-item">
+			<button class="btn btn-white">@Html.ActionLink("Log in", "Login", "Account")</button>
+			</li>
+		}
+		
+	</header>
 	<div class="container">
 		<main role="main" class="pb-3">
 			@RenderBody()
