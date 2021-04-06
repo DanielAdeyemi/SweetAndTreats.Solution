@@ -30,7 +30,8 @@ namespace SweetAndTreat
         .AddDbContext<SweetAndTreatContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
 
-      services.AddIdentity<ApplicationUser, IdentityRole>()
+      services.AddIdentity<ApplicationUser, IdentityRole>(cfg =>
+        cfg.User.RequireUniqueEmail = true)
         .AddEntityFrameworkStores<SweetAndTreatContext>()
         .AddDefaultTokenProviders();
 
@@ -50,7 +51,7 @@ namespace SweetAndTreat
       app.UseDeveloperExceptionPage();
 
       app.UseRouting();
-      
+
       app.UseAuthentication();
 
       app.UseAuthorization();
