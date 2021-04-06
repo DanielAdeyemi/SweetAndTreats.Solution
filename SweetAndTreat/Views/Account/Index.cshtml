@@ -11,11 +11,6 @@
   <p>Welcome back @User.Identity.Name</p>
   <button class="btn btn-white">@Html.ActionLink("To the flavors", "Index", "Flavors")</button>
   <button class="btn btn-white">@Html.ActionLink("To the treats", "Index", "Treats")</button>
-
-    @using (Html.BeginForm("LogOff", "Account"))
-    {
-      <input type="submit" class="btn btn-dark" value="Log out" />
-    }
 }
 else 
 {
