@@ -44,6 +44,10 @@ namespace SweetAndTreat.Controllers
 
     public ActionResult Login()
     {
+      if(this.User.Identity.IsAuthenticated)
+      {
+        return RedirectToAction("Index");
+      }
       return View();
     }
 
